@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<head>
+		<script type="text/javascript">
+		//EVENTOS EN javascript
+
+		function hacer_click()
+		{
+			alert("Welcome master");
+		}
+		</script>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <style>
+  		/* Remove the navbar's default margin-bottom and rounded borders */ 
+	    .navbar {
+	      margin-bottom: 0;
+	      border-radius: 0;
+	    }	   
+	    
+	    /* Set gray background color and 100% height */
+	    .sidenav {
+	      padding-top: 20px;
+	      /*background-color: black;*/
+	      height: 100%;
+	    }
+
+	    @media screen and (max-width: 767px) {
+	      .sidenav {
+	        height: auto;
+	        padding: 15px;
+	    }    
+
+	  </style>
+	  </style>
+	</head>
+	<body background="pictures/adminlogin.jpg">
+		<section>
+			<nav class="navbar navbar-inverse">
+				  <div class="container-fluid">
+				    <div class="navbar-header">
+					    <a href="Anime.html">
+					      <h1>
+								OrientalSite
+								<small>By Ralbert</small> 
+						  </h1>
+						</a>
+				    </div>
+				  </div>
+				</nav> 
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4">
+						    <h2>
+								Please, prove that you are my Master.
+							</h2>
+							<form action="">
+								<div class="form-group">
+									<label for="email">Admin Name</label>
+									<input type="email" class="form-control" id="email" placeholder="Just for admin" name="email">
+								</div>
+								<div class="form-group">
+									<label for="pwd">Password:</label>
+									<input type="password" class="form-control" id="pwd" placeholder="Is time to see if you are what you say" name="pwd">
+								</div>															
+								<a href="admin.html" type="submit" class="btn btn-default" onclick="hacer_click()">Submit</a>
+							</form>							
+						</div>
+					</div>
+					
+				</div>
+		</section>
+		
+	</body>
+</html>
