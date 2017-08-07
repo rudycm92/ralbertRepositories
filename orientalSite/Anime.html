@@ -1,56 +1,23 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	    <style>
-  		/* Remove the navbar's default margin-bottom and rounded borders */ 
-	    .navbar {
-	      margin-bottom: 0;
-	      border-radius: 0;
-	    }
-	    
-	    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-	    .row.content {height: 450px}
-	    
-	    /* Set gray background color and 100% height */
-	    .sidenav {
-	      padding-top: 20px;
-	      /*background-color: black;*/
-	      height: 100%;
-	    }
-	    
-	    /* Set black background color, white text and some padding */
-	    /*footer {
-	      background-color: #555;
-	      color: white;
-	      padding: 15px;
-	    }*/
-	    
-	    /* On small screens, set height to 'auto' for sidenav and grid */
-	    @media screen and (max-width: 767px) {
-	    .sidenav {
-	        height: auto;
-	        padding: 15px;
-	      }
-	    .row.content {height:auto;} 
-	    /* For maiking a space between the navbar and the elements */
-	    /*body { padding-top: 100px; }*/
-	    </style>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style/style.css">
 	</head>
-	<body background="pictures/red.jpg" style="padding-top: 70px;">
+	<body background="pictures/fondo02.jpg" style="padding-top: 70px;">
 		<section>
-		 		<nav class="navbar navbar-inverse navbar-fixed-top col-sm-12" role="navigation">
+		 		<nav class="navbar navbar-inverse navbar-fixed-top col-sm-12 col-md-12 col-lg-12" role="navigation">
 				  <div class="container-fluid">
-				    <div class="navbar-header col-sm-4">
+				    <div class="navbar-header col-sm-4 col-md-4 col-lg-4">
 				      <h1>
 							OrientalSite
-							<small>By Ralbert</small> 
+							<small>By Ralbert</small>
 						</h1>
 				    </div>
-				    <div class="navbar-header col-sm-4">
+				    <div class="navbar-header col-sm-4 col-md-4 col-lg-4">
 					    <form class="navbar-form navbar-left" role="search">
 					      <div class="form-group">
 					        <input type="text" class="form-control" placeholder="Search">
@@ -58,7 +25,7 @@
 					      <a href="bleachsearch.html" type="submit" class="btn btn-default">Search</a>
 					    </form>
 				    </div>
-				    <div class="navbar-header col-sm-4">
+				    <div class="navbar-header col-sm-4 col-md-4 col-lg-4">
 					    <ul class="nav navbar-nav navbar-right">
 					      <li><a href="SignUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 					      <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -66,10 +33,10 @@
 					    </ul>
 				    </div>
 				  </div>
-				</nav> 
+				</nav>
 				<div class="container-fluid">
 				    <div class="row">
-					    <div class="col-md-4 col-md-offset-4"> 
+					    <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
 					        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 							  <!-- Indicators -->
 							  <ol class="carousel-indicators">
@@ -109,24 +76,18 @@
 							  </a>
 							</div>
 					    </div>
-				    </div> 
+				    </div>
 			    </div>
 
-				<div class="text-center"> 
-					
+				<div class="text-center">
+
 				</div>
 
 				<nav class="navbar navbar-inverse">
 				  <div class="container-fluid">
 				  	<div class="row">
-				    <!--
-				    <div class="navbar-header">
-				      <a class="navbar-brand" href="#">WebSiteName</a>
-				    </div>
-				    -->
-
-				    <!--   "col-md-offset-2" moves the colum to its right the equivalent to the number of blocks  --> 
-					    <div class="col-sm-3 col-sm-offset-2">
+				    <!--   "col-md-offset-2" moves the colum to its right the equivalent to the number of blocks  -->
+					    <div class="col-sm-3 col-md-3 col-lg-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
 					    	<ul class="nav navbar-nav">
 						      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Genre <span class="caret"></span></a>
 						        <ul class="dropdown-menu">
@@ -137,8 +98,8 @@
 						        </ul>
 						      </li>
 						    </ul>
-					    </div>					    
-					    <div class="col-sm-3">
+					    </div>
+					    <div class="col-sm-3 col-md-3 col-lg-3">
 						    <ul class="nav navbar-nav">
 						      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Year <span class="caret"></span></a>
 						        <ul class="dropdown-menu">
@@ -148,29 +109,29 @@
 						          <li><a href="#">2014</a></li>
 						        </ul>
 						      </li>
-							</ul>
-						</div>
-						<div class="col-sm-3">
-							<ul class="nav navbar-nav">
-						      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Current state <span class="caret"></span></a>
-						        <ul class="dropdown-menu">
-						          <li><a href="emosion.html">In emission</a></li>
-						          <li><a href="finished.html">Finished</a></li>
-						        </ul>
-						      </li>
-						    </ul>
-					  	</div>
+								</ul>
+							</div>
+							<div class="col-sm-3 col-md-3 col-lg-3">
+								<ul class="nav navbar-nav">
+							      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Current state <span class="caret"></span></a>
+							        <ul class="dropdown-menu">
+							          <li><a href="emosion.html">In emission</a></li>
+							          <li><a href="finished.html">Finished</a></li>
+							        </ul>
+							      </li>
+							   </ul>
+						  </div>
 					 </div>
 				</nav>
 				 </div>
 
 				<div class="container-fluid">
 					<div class="row">
-					    <div class="col-sm-3 sidenav">
+					    <div class="col-sm-3 col-md-3 col-lg-3">
 					      <h3>
 					        <strong>
 					        	Watch our last content
-					        </strong>        
+					        </strong>
 					      </h3>
 					      <br>
 					      <p>
@@ -179,143 +140,106 @@
 					      	Naruto
 					      	</a>
 					      </p>
-					      <p>				      	
+					      <p>
 					      	<a href="animes/bleach/bleach.html">
 						      	<img src="pictures/bleach.png" alt="un roble" width="100" height="100">
 						      	Bleach
-						    </a>  			      	
+						    </a>
 					      </p>
 					      <p>
 					      	<a href="#">
 					      		<img src="pictures/i_guilty.png" alt="un roble" width="100" height="100">
 					            Guilty Crown
-					        </a>				            
+					        </a>
 					      </p>
-					      <p>				      	
+					      <p>
 					      	<a href="#">
 					      		<img src="pictures/i_overloard.png" alt="un roble" width="100" height="100">
 					      		Overloard
-					      	</a>		      	
+					      	</a>
 					      </p>
 					    </div>
-					    <div class="col-sm-6 sidenav"> 
-					        <table class="list" >
-							    <thead>
-							      <tr> </tr>
-							    </thead>
-							    <tbody>
-							      <tr>
-							        <td width="300" valign="top">
-							            <a href="#">Shigatsu wa kimi no uso</a>
-							        	<br>
-							        	<a href="#">Densetsu no yousha no desentsu</a>
-							        	<br>
-							        	<a href="#">Monogatari</a>
-							        	<br>
-							        	<a href="#">Sword art online</a>
-							        	<br>
-							        	<a href="animes/bleach/bleach.html">Bleach</a>
-							        	<br>
-							        	<a href="#">Monogatari</a>
-							        	<br>
-							        	<a href="#">Naruto</a>
-							        	<br>
-							        	<a href="#">Ajing</a>
-							        	<br>
-							        	<a href="#">Katanagatari</a>
-							        	<br>
-							        	<a href="#">School days</a>
-							        	<br>
-							        	<a href="#">Dungeon ni Deai</a>
-							        	<br>
-							        	<a href="#">Natsume Yuujinchou Roku</a>
-							        	<br>
-							        	<a href="#">11 eyes</a>
-							        	<br>
-							        	<a href="#">91 days</a>
-							        	<br>
-							        	<a href="#">Accel world</a>
-							        	<br>
-							        	<a href="#">Acchi kocchi</a>
-							        	<br>
-							        	<a href="#">Afro samurai</a>
-							        	<br>
-							        	<a href="#">Ah my goddess</a>
-							        	<br>
-							        	<a href="#">Asu no yoichi</a>
-							        	<br>
-							        	<a href="#">Bakuman</a>
-							        	<br>
-							        	<a href="#">Bakenogatari</a>
-							        	<br>
-							        	<a href="#">Bakumatsu</a>
-							        	<br>
-							        	<a href="#">Bakuon</a>
-							        	<br>
-							        	<a href="#">Botoom</a>
-							        </td>
-							        <td width="300" valign="top">
-							        	<a href="#">Shigatsu wa kimi no uso</a>
-							        	<br>
-							        	<a href="#">Densetsu no yousha no desentsu</a>
-							        	<br>
-							        	<a href="#">Monogatari</a>
-							        	<br>
-							        	<a href="#">Sword art online</a>
-							        	<br>
-							        	<a href="#">Bleach</a>
-							        	<br>
-							        	<a href="#">Monogatari</a>
-							        	<br>
-							        	<a href="#">Naruto</a>
-							        	<br>
-							        	<a href="#">Ajing</a>
-							        	<br>
-							        	<a href="#">Katanagatari</a>
-							        	<br>
-							        	<a href="#">School days</a>
-							        	<br>
-							        	<a href="#">Dungeon ni Deai</a>
-							        	<br>
-							        	<a href="#">Natsume Yuujinchou Roku</a>
-							        	<br>
-							        	<a href="#">11 eyes</a>
-							        	<br>
-							        	<a href="#">91 days</a>
-							        	<br>
-							        	<a href="#">Accel world</a>
-							        	<br>
-							        	<a href="#">Acchi kocchi</a>
-							        	<br>
-							        	<a href="#">Afro samurai</a>
-							        	<br>
-							        	<a href="#">Ah my goddess</a>
-							        	<br>
-							        	<a href="#">Asu no yoichi</a>
-							        	<br>
-							        	<a href="#">Bakuman</a>
-							        	<br>
-							        	<a href="#">Bakenogatari</a>
-							        	<br>
-							        	<a href="#">Bakumatsu</a>
-							        	<br>
-							        	<a href="#">Bakuon</a>
-							        	<br>
-							        	<a href="#">Botoom</a>
-							        </td>									   
-							    </tbody>
-							</table>    
+					    <div class="col-sm-6 col-md-6 col-lg-6">
+								<!-- this part is the container of the links in the middle of the grid -->
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="thumbnail">
+											<a href="pictures/list/hyakkaRyouranSamuraiGirls.jpg">
+												<img class="img-responsive" src="pictures/list/hyakkaRyouranSamuraiGirls.jpg" alt="Lights" style="width:100%">
+												<div class="caption">
+													<p class="text0">Hyakka Ryouran Samurai Girls</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="thumbnail">
+											<a href="pictures/list/k-project.jpg">
+												<img class="img-responsive" src="pictures/list/k-project.jpg" alt="Lights" style="width:100%">
+												<div class="caption">
+													<p class="text0">K-Project</p>
+													<br/>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="thumbnail">
+											<a href="pictures/list/steinsGate.jpg">
+												<img class="img-responsive" src="pictures/list/steinsGate.jpg" alt="Lights" style="width:100%">
+												<div class="caption">
+													<p class="text0">SteinsGate</p>
+													<br/>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="thumbnail">
+											<a href="pictures/list/bakuman.jpg">
+												<img class="img-responsive" src="pictures/list/bakuman.jpg" alt="Lights" style="width:100%">
+												<div class="caption">
+													<p class="text0">Bakuman</p>
+													<br/>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="thumbnail">
+											<a href="pictures/list/CodeGeass.jpg">
+												<img class="img-responsive" src="pictures/list/CodeGeass.jpg" alt="Lights" style="width:100%">
+												<div class="caption">
+													<p class="text0">Code Geass</p>
+													<br/>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="thumbnail">
+											<a href="pictures/list/dGrayMan.jpg">
+												<img class="img-responsive" src="pictures/list/dGrayMan.jpg" alt="Lights" style="width:100%">
+												<div class="caption">
+													<p class="text0">D-Gray Man</p>
+													<br/>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
 					    </div>
-					    <div class="col-sm-3 sidenav">
-					      <img class="img-responsive" src="pictures/music.png" alt="Chania"> 		    	 
-						  <audio controls = "controls" autoplay = "autoplay" loop = "loop">
-							<source src = "sound/song1.mp3" type = "audio/mpeg" />
-						  </audio>
-
-						</div>						
-				    </div>
+					    <div class="col-sm-3 col-md-3 col-lg-3">
+					      <img class="img-responsive" src="pictures/music.png" alt="Chania">
+							  <audio controls = "controls" autoplay = "autoplay" loop = "loop">
+								<source src = "sound/song1.mp3" type = "audio/mpeg" />
+							  </audio>
+							</div>
 			    </div>
-			
+		    </div>
+
 		</section>
 		<!--para asignar una posicion en la pantalla-->
 	</body>
