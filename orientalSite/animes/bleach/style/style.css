@@ -16,9 +16,30 @@
 
 .text0{color: #AAA4A4;}
 
+/*this is for make the audio bar responsive*/
 .audioResponsive{
   width:100%;
   max-width:600px;
+}
+
+.borderStyleComplete {
+  border: 2px solid white;
+}
+
+.borderStyleRight {
+  border-left: 2px solid white;
+}
+
+.borderStyleLeft {
+  border-right: 2px solid white;
+}
+.borderStyleLeftPicture {
+  padding-right: 27px;
+}
+.borderStyleBottom {
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 /* Set gray background color and 100% height */
