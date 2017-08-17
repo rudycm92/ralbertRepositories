@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<body background="pictures/01.jpg">
+		<section>
+			<div class="row">
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<a href="../../socialNetI.html">
+						<h1>
+							SocialNet
+							<small>By Ralbert</small>
+						</h1>
+					</a>
+				</div>
+			</div>
+			<div class="row" style="padding-top: 60px;">
+				<div class="text-center" style="padding:50px 0">
+					<div class="logo">Edit my profile</div>
+					<div class="login-form-1">
+						<form id="login-form" class="text-left">
+							<div class="login-form-main-message"></div>
+							<div class="main-login-form">
+								<div class="login-group">
+									<div class="form-group">
+										<label for="lg_currentUsername" class="sr-only">Current Username</label>
+										<input type="text" class="form-control" id="lg_currentUsername" name="lg_currentUsername" placeholder="Current Username">
+									</div>
+									<div class="form-group">
+										<label for="lg_currentPassword" class="sr-only">Current Password</label>
+										<input type="password" class="form-control" id="lg_currentPassword" name="lg_currentPassword" placeholder="Current Password">
+									</div>
+									<div class="form-group">
+										<label for="lg_newUsername" class="sr-only">New Username</label>
+										<input type="text" class="form-control" id="lg_newUsername" name="lg_newUsername" placeholder="New Username">
+									</div>
+									<div class="form-group">
+										<label for="lg_newPassword" class="sr-only">New Password</label>
+										<input type="password" class="form-control" id="lg_newPassword" name="lg_newPassword" placeholder="New Password">
+									</div>
+									<div class="form-group">
+										<label for="lg_newConfirmedPassword" class="sr-only">Confirm your new Password</label>
+										<input type="password" class="form-control" id="lg_newConfirmedPassword" name="lg_newConfirmedPassword" placeholder="Password Confirmed">
+									</div>
+									<div class="form-group">
+										<label for="lg_fullname" class="sr-only">Full Name</label>
+										<input type="text" class="form-control" id="lg_fullname" name="lg_fullname" placeholder="Full Name">
+									</div>
+									<div class="form-group">
+										<label for="lg_email" class="sr-only">E-Mail</label>
+										<input type="email" class="form-control" id="lg_email" name="lg_email" placeholder="E-Mail">
+									</div>
+								</div>
+								  <a type="submit" class="btn login-button glyphicon glyphicon-menu-up" onclick="editData()"></a>
+									<!--<button type="submit" id="loginButton" class="btn login-button glyphicon glyphicon-menu-up"></button>-->
+							</div>
+							<div class="etc-login-form">
+								<p>new user? <a href="../registrationForm/registrationForm.html">create new account</a></p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="localStorage.js"></script>
+	</body>
+	<footer>
+		<div class="col-sm-3 col-sm-offset-9">
+		<h4>
+			Powered by Ralbert
+		</h4>
+		</div>
+	</footer>
+</html>

@@ -48,7 +48,7 @@ function editData() {
   localStorage.setItem('users', JSON.stringify(users));
   if (success) {
     alert(message);
-    location = '../../Anime.html';
+    location = '../../socialNetI.html';
   } else {
     alert(message);
   }

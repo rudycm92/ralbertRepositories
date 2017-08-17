@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+	<body background="pictures/fondo08.jpg" style="padding-top: 70px;">
+		<section>
+		 		<nav class="navbar navbar-inverse navbar-fixed-top col-sm-12 col-md-12 col-lg-12" role="navigation">
+				  <div class="container-fluid">
+				    <div class="navbar-header col-sm-6 col-md-6 col-lg-6">
+				      <h1>
+							SocialNet
+							<small>By Ralbert</small>
+						</h1>
+				    </div>
+				    <div class="navbar-header col-sm-4 col-md-6 col-lg-6">
+					    <ul class="nav navbar-nav navbar-right">
+								<li><a type="logout" class="glyphicon glyphicon-chevron-left" onclick="goBack()">Go back</a></li>
+					      <li><a type="logout" class="glyphicon glyphicon-log-out" onclick="clearLocalStorage()">Logout</a></li>
+					    </ul>
+				    </div>
+				  </div>
+				</nav>
+				<div class="container-fluid">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<div class="row">
+						  <div class="col-sm-6 col-sm-offset-3">
+								<h3>Insert your comment here</h3>
+								<div class="form-group">
+								  <input type="text" class="form-control" id="comment">
+									<a type="insert" class="btn btn-default" onclick="addComment()">Post</a>
+								</div>
+								<br/>
+								<div class="row">
+									<div class="col-sm-4">
+										<strong>User</strong>
+									</div>
+									<div class="col-sm-8">
+										<strong>Comment</strong>
+									</div>
+									<div class="col-sm-12" id="comments">
+
+									</div>
+								</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<script src="localStorage.js"></script>
+	</body>
+</html>

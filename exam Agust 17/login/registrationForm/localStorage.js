@@ -1,20 +1,4 @@
 
-//this is for listenign the event on the clic of the button
-
-events();
-
-//recive all the user information and save this information in local storage
-
-function events() {
-  //debugger;
-  var registerNewUser = document.getElementById('registerButton');
-  registerNewUser.addEventListener('click', function () {
-    insertData();
-
-    //localStorage.clear();
-  });
-}
-
 //funtion to save all the data of the form
 function insertData() {
 
@@ -25,6 +9,7 @@ function insertData() {
     password: document.getElementById('reg_password').value,
     email: document.getElementById('reg_email').value,
     name: document.getElementById('reg_fullname').value,
+    logged: '1',
   };
   if (userData.password == passwordConfirm) {
     //get user data from localStorage if that information exist
@@ -45,7 +30,7 @@ function insertData() {
     localStorage.setItem('users', JSON.stringify(users));
 
     alert('Your information has been saved. Please enjoy our site');
-    location = '../../Anime.html';
+    location = '../../socialNetII.html';
 
   } else {
     alert('Please make sure that your password is the same in both spaces');
