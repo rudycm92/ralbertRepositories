@@ -1,47 +1,29 @@
 
-//this is for listenign the event on the clic of the button
-
-events();
-
-//recive all the user information and save this information in local storage
-
-function events() {
-  var isUser = document.getElementById('loginButton');
-  isUser.addEventListener('click', function () {
-    editData();
-
-    //localStorage.clear();
-  });
-}
-
 //this part is for validating the user information
 
 function editData() {
-  var newPasswordConfirm = document.getElementById('reg_password_confirm').value;
+  debugger;
+  var newPasswordConfirm = document.getElementById('lg_newConfirmedPassword').value;
   var message = '';
   var userData = {
-    newUsername: document.getElementById('lg_newUsername').value,
-    newPassword: document.getElementById('lg_newPassword').value,
-    email: document.getElementById('reg_email').value,
-    name: document.getElementById('reg_fullname').value,
+    username: document.getElementById('lg_newUsername').value,
+    password: document.getElementById('lg_newPassword').value,
+    email: document.getElementById('lg_email').value,
+    name: document.getElementById('lg_fullname').value,
   };
 
-  var passwordHtml = document.getElementById('lg_password').value;
-  var userHtml = document.getElementById('lg_username').value;
+  var passwordHtml = document.getElementById('lg_currentPassword').value;
+  var userHtml = document.getElementById('lg_currentUsername').value;
   var users = JSON.parse(localStorage.getItem('users'));
   var success = false;
+  message = 'Your passwords are not the same or the information is incorrect. Please verify.';
   for (var i = 0; i < users.length; i++) {
     if (users[i].username == passwordHtml && users[i].username == userHtml) {
-      if (userData.newPassword == newPasswordConfirm) {
-        users[i].push(userData);
+      if (userData.password == newPasswordConfirm) {
         success = true;
-        localStorage.setItem('users', JSON.stringify(users));
-        message = 'Your information has been saved. Please enjoy our site';
-      } else {
-        message = 'Your password are not the same. Please verify.';
+        message = 'Your information has been modified successfully!!'
+        users[i] = userData;
       }
-    } else {
-      message = 'Your password or username is incorrect. Please verify';
     }
   }
 

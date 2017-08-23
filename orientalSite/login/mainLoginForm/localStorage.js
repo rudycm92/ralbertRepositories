@@ -22,18 +22,25 @@ function validateData() {
   var passwordHtml = document.getElementById('lg_password').value;
   var userHtml = document.getElementById('lg_username').value;
   var isUser = false;
+  var isAdmin = false;
   if (!users) {
     alert('Please verify your password or username');
   } else {
     users.forEach(function (user) {
       if (user.password == passwordHtml && user.username == userHtml) {
         isUser = true;
+        if (user.type == 'A') {
+          isAdmin = true;
+        }
       }
     }, this);
 
-    if (isUser) {
+    if (isUser == true && isAdmin == false) {
       alert('Is a pleasure to see you again');
       location = '../../AnimeII.html';
+    } else if (isUser == true && isAdmin == true) {
+      alert('Welcome again Master');
+      location = '../../adminMain.html';
     } else {
       alert('Please verify your password or username');
     }

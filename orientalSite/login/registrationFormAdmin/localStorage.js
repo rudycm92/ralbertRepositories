@@ -25,6 +25,7 @@ function insertData() {
     password: document.getElementById('reg_password').value,
     email: document.getElementById('reg_email').value,
     name: document.getElementById('reg_fullname').value,
+    type: 'A',
   };
   if (userData.password == passwordConfirm) {
     //get user data from localStorage if that information exist
@@ -45,7 +46,7 @@ function insertData() {
     localStorage.setItem('users', JSON.stringify(users));
 
     alert('Your information has been saved. Please enjoy our site');
-    location = '../../AnimeII.html';
+    location = '../../adminMain.html';
 
   } else {
     alert('Please make sure that your password is the same in both spaces');

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+		<script type="text/javascript">
+		</script>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<body background="pictures/adminlogin.jpg">
+		<section>
+			<nav class="navbar navbar-inverse">
+				  <div class="container-fluid">
+				    <div class="navbar-header">
+					    <a href="Anime.html">
+					      <h1>
+								OrientalSite
+								<small>By Ralbert</small>
+						  </h1>
+						</a>
+				    </div>
+				 </div>
+			</nav>
+				<div class="container-fluid">
+					<div class="col-md-6 col-sm-6 col-lg-6">
+						<div class="row">
+						<form>
+						  <div class="form-group">
+							<label> Anime Title:</label>
+							<input type="title" class="form-control" id="title" name="Title" required>
+							<br>
+						    <label> Aternative Title:</label>
+							<input type="aternative title" class="form-control" id="aternativeTitle" name="Aternative" required>
+						  </div>
+						  <br>
+						</form>
+
+						<form class="form-inline">
+							<div class="form-group">
+							  <label>Chapters:</label>
+							  <input class="form-control" id="chapters" name="chapters" required>
+					      <label>Author:</label>
+					      <input class="form-control" id="author" name="author" required>
+							</div>
+						</form>
+						<br>
+						<form>
+						  <div class="form-group">
+								<label>Genre:</label>
+								<input type="infoGenre" class="form-control" id="genre" name="Genre" required>
+						  </div>
+						</form>
+						<form class="form-inline">
+							<div class="form-group">
+								<label>Emition's year:</label>
+								<input type="infoEmition" class="form-control" id="emition" name="Emition" required>
+								<label>State:</label>
+								<input type="infoState" class="form-control" id="state" name="State" required>
+							</div>
+						</form>
+						<br>
+						<label>Sinopsis</label>
+
+						<form action="bleachcomment.html" method="post">
+		       		<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+							<br>
+							<button class="btn btn-default" type="reset">Reset</button>
+		         	</form>
+		         	<br>
+	            <label>Select your files here</label>
+			        <form enctype="multipart/form-data">
+							<div class="form-group">
+								<input id="file-1" type="file" class="file" multiple="true" data-preview-file-type="any">
+							</div>
+							<div class="form-group">
+								<button class="btn btn-default" type="reset">Reset</button>
+							</div>
+						</form>
+						<br>
+						<br>
+		        <label>If you think that all is good please click on...</label>
+						<a class="btn btn-default" onclick="insertData()">All is fine</a>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="localStorage.js"></script>
+	</body>
+</html>
